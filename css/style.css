@@ -1,0 +1,414 @@
+*,
+*:after,
+*:before{
+  box-sizing: border-box;
+}
+.container{
+  margin: 0 auto;
+}
+body{
+  background-color: #24282a;
+}
+.navbar-light .navbar-toggler-icon{
+  background: none;
+}
+.navbar-light .navbar-toggler{
+  border: none;
+}
+.navbar-light .navbar-brand{
+  color: #ffffff;
+  font-family: "Tenoture";
+  font-weight: normal;
+  font-size: 25px;
+}
+.navbar-light .navbar-brand:hover{
+  color: #ffffff;
+  font-family: "Tenoture";
+  font-weight: normal;
+  font-size: 25px;
+}
+.navbar-light .navbar-brand:focus{
+  color: #ffffff;
+  font-family: "AA Bebas Neue";
+  font-weight: normal;
+  font-size: 36px;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: #ffffff;
+  font-family: "AA Bebas Neue";
+  font-weight: normal;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #ffffff;
+  font-family: "AA Bebas Neue";
+  font-weight: normal;
+  font-size: 20px;
+}
+.navbar-light .navbar-nav .nav-link:focus{
+  color: #ffffff;
+  font-family: "AA Bebas Neue";
+  font-weight: normal;
+  font-size: 20px;
+}
+.nav-item{
+  display: flex;
+  justify-content: center;
+}
+.toggle_switch{
+  width: 100px;
+  height: 45px;
+  position: relative;
+}
+.info h1{
+  color: #ffffff;
+  font-family: "AA Bebas Neue";
+  font-weight: normal;
+  font-size: 50px;
+}
+.info h2{
+  color: #ffffff;
+  font-family: "AA Bebas Neue";
+  font-weight: normal;
+  font-size: 48px;
+}
+.info img{
+  -webkit-filter: invert(0%);
+  filter: invert(0%);
+}
+.stroke{
+  width: 415px;
+  height: 520px;
+}
+.skill_table_1{
+  margin-top: 25px;
+}
+.line_skill{
+  margin-top: -40px;
+  margin-left: 100px;
+  position: absolute;
+  width: 310px;
+  height: 1px;
+  background: #ffffff;
+}
+.line_skill_last{
+  margin-top: -40px;
+  margin-left: 125px;
+  position: absolute;
+  width: 450px;
+  height: 1px;
+  background: #ffffff;
+}
+.skill h4{
+  padding: 17px;
+  color: #ffffff;
+  font-family: "AA Bebas Neue";
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: 50px;
+}
+.interest_skill{
+  font-family: "AA Bebas Neue";
+  font-size: 25px;
+  color: #ffffff;
+  margin-top: -55px;
+  margin-left: 455px;
+  position: absolute;
+}
+.interest_skill_end{
+  font-family: "AA Bebas Neue";
+  font-size: 25px;
+  color: #ffffff;
+  margin-top: -55px;
+  margin-left: 455px;
+  position: absolute;
+}
+.my_works_title{
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: "AA Bebas Neue";
+  font-weight: normal;
+  font-size: 50px;
+  margin-top: 100px;
+}
+.single-item{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.slick-dots li.slick-active button:before {
+  color: white;
+}
+.slick-dots li button::before {
+  color: #ffffff;
+}
+.footer{
+  margin-top: 50px;
+  background: #000000;
+}
+.footer a{
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 40px;
+  transition: all 1s;
+}
+.footer a:active{
+  color: #28c7da;
+  transition: all 1s;
+}
+
+/* Початок настройки кольору в секції info */
+.dud{
+  color: #757575;
+}
+.skill{
+  margin-top: 100px;
+}
+.skill h3{
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: "AA Bebas Neue";
+  font-weight: normal;
+  font-size: 48px;
+}
+/* Кінець */
+/* Кнопка переключення тем (Початок)*/
+input[type="checkbox"].switch_3{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  outline: 0;
+  z-index: 1;
+}
+
+svg.checkbox .outer-ring{
+  stroke-dasharray: 375;
+  stroke-dashoffset: 375;
+  -webkit-animation: resetRing .35s ease-in-out forwards;
+          animation: resetRing .35s ease-in-out forwards;
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .outer-ring{
+  -webkit-animation: animateRing .35s ease-in-out forwards;
+          animation: animateRing .35s ease-in-out forwards;
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .is_checked{
+  opacity: 1;
+  -webkit-transform: translateX(0) rotate(0deg);
+          transform: translateX(0) rotate(0deg);
+}
+
+input[type="checkbox"].switch_3:checked + svg.checkbox .is_unchecked{
+  opacity: 0;
+  -webkit-transform: translateX(-200%) rotate(180deg);
+          transform: translateX(-200%) rotate(180deg);
+}
+
+
+svg.checkbox{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+svg.checkbox .is_checked{
+  opacity: 0;
+  fill: yellow;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(200%) rotate(45deg);
+          transform: translateX(200%) rotate(45deg);
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+svg.checkbox .is_unchecked{
+  opacity: 1;
+  fill: #fff;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: translateX(0) rotate(0deg);
+          transform: translateX(0) rotate(0deg);
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+@-webkit-keyframes animateRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #b0aa28;
+  }
+}
+
+@keyframes animateRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #b0aa28;
+  }
+}
+
+@-webkit-keyframes resetRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #1b9eb1;
+  }
+}
+
+@keyframes resetRing{
+  to{
+    stroke-dashoffset: 0;
+    stroke: #1b9eb1;
+  }
+}
+/*Кінець кнопки*/
+/* Початок обводки */
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #ffffff;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+/* Кінець обводки */
+/* Прелоадор початок */
+.preloader {
+  --bg-color: #24282a;
+  --size: 200px;
+  --first-color: #ec164f;
+  --second-color: #ffc952;
+  --third-color: #47b8e0;
+  --thickness: 3px;
+  --duration: 1s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--duration);
+  z-index: 1;
+}
+
+.preloader_content {
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+}
+
+.preloader_first,
+.preloader_second,
+.preloader_third {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: var(--duration) linear infinite;
+}
+
+.preloader_first {
+  border-bottom: var(--thickness) solid var(--first-color);
+  animation-name: first;
+}
+
+.preloader_second {
+  border-right: var(--thickness) solid var(--second-color);
+  animation-name: second;
+}
+
+.preloader_third {
+  border-top: var(--thickness) solid var(--third-color);
+  animation-name: third;
+}
+
+@keyframes first {
+  0% { transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg); }
+  100% { transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg); }
+}
+
+@keyframes second {
+  0% { transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg); }
+  100% { transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg); }
+}
+
+@keyframes third {
+  0% { transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg); }
+  100% { transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg); }
+}
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Кінець прелоадера */

@@ -1,0 +1,153 @@
+/* ------ Media Queries ------ */
+.header{
+  background: #000000;
+}
+.navbar-light .navbar-brand{
+  margin-right: 150px;
+}
+.navbar-collapse {
+  display: flex;
+  flex-direction: column;
+}
+.info{
+  margin-top: 100px;
+}
+.info h1{
+  margin-top: 200px;
+}
+.info img{
+  float: right;
+  width: 415px;
+  height: 520px;
+}
+.stroke{
+  float: right;
+}
+.interest_skill_end{
+  margin-left: 650px;
+}
+.link_footer{
+  margin-right: 50px;
+}
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+  .line_skill{
+    width: 250px;
+  }
+  .line_skill_last{
+    width: 380px;
+  }
+  .interest_skill{
+    margin-left: 380px;
+  }
+  .interest_skill_end{
+    margin-left: 550px;
+  }
+}
+/* 768-992px */
+@media screen and (max-width: 992px) {
+  .info .info_text{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  .info .info_photo{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 310px;
+    height: 410px;
+  }
+  .info{
+    margin-top: 25px;
+  }
+  .info h1{
+    margin-top: 0px;
+  }
+  .info img{
+    float: none;
+  }
+  .stroke{
+    display: flex;
+    justify-content: center;
+    float: none;
+    margin: 0 auto;
+    width: 310px;
+    height: 410px;
+  }
+  .line_skill{
+    width: 320px;
+  }
+  .interest_skill{
+    margin-left: 450px;
+  }
+  .link_footer{
+    margin-right: 0;
+  }
+}
+/* 576-768px */
+@media screen and (max-width: 768px) {
+  .navbar-light .navbar-brand{
+    margin-right: 0;
+  }
+  .info .info_photo{
+    width: 20em;
+    height: 25em;
+  }
+  .stroke{
+    width: 20em;
+    height: 25em;
+  }
+.line_skill_last{
+  width: 290px;
+  }
+  .interest_skill{
+    width: 100px;
+  }
+  .interest_skill_end{
+    margin-left: 450px;
+  }
+}
+/* 320-576px */
+@media screen and (max-width: 576px) {
+.navbar-light .navbar-brand{
+    font-size: 24px;
+  }
+  .navbar-light .navbar-brand{
+    margin-right: 0;
+  }
+  .navbar-light .navbar-brand:hover{
+    font-size: 24px;
+  }
+  .info .info_photo{
+    width: 16em;
+    height: 20em;
+  }
+  .stroke{
+    width: 16em;
+    height: 20em;
+  }
+  .line_skill{
+    margin-left: 60px;
+    width: 100px;
+  }
+  .line_skill_last{
+    margin-left: 60px;
+    width: 100px;
+  }
+  .interest_skill{
+    margin-left: 190px;
+  }
+  .interest_skill_end{
+    margin-left: 190px;
+  }
+  .slick-next .slick-arrow{
+    display: none;
+  }
+.slick-prev:before, .slick-next:before {
+  display: none;
+  }
+.slick-next {
+    right: 0;
+  }
+}
